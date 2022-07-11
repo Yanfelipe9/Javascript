@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 003</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: burlywood;
+            font: normal 25px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> 
+    <script> 
+
+        var numero1 = Number(window.prompt('Digite o primeiro numero')) // string > number
+
+        var numero2 = Number(window.prompt('Digite o segundo numero')) // string
+
+        var s = numero1 + numero2
+
+        window.alert(`A soma do ${numero1} e do ${numero2} é de ${s}`) // Concatenaçãoo
+        // (number + number) para adição
+        // (string + string) para concatenação
+        
+        document.write(s.toLocaleString('pt-br', {style : 'currency' , currency: 'BRL'})) // Transforma o numero para o formato da moeda
+        
+        
+    </script>
+</body>
+</html>

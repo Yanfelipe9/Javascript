@@ -17,23 +17,32 @@ function verificar() {
 
         if(fsexo[0].checked){
             genero = 'Homem'
-            if(idade>=0 && idade<=5){
+            if(idade >= 0 && idade < 5){
                 img.src = 'imagens/homem-bebe.png'
-            } else if(idade > 5 && idade <= 15){
-                img.src = 'imagens/homem-crianca.png'  
-            } else if (idade <= 30){
+            } else if(idade <= 12){
+                img.src = 'imagens/homem-crianca.png'
+            } else if(idade <= 30){
                 img.src = 'imagens/homem-jovem.png'
-            } else if (idade <= 60){
+            } else if(idade <= 55){
                 img.src = 'imagens/homem-adulto.png'
-            } else if (idade <= 150){
+            } else if(idade <= 150){
                 img.src = 'imagens/homem-idoso.png'
-            } else{
-                img.innerHTML = 'Deve estar morto'
-            }
-            
+            } 
+           
         } else if(fsexo[1].checked){
             genero = 'Mulher'
-        }
+            if(idade >= 0 && idade < 5){
+                img.src = 'imagens/mulher-bebe.png'
+            }else if(idade <= 12){
+                img.src = 'imagens/mulher-crianca.png'
+            } else if(idade <= 30){
+                img.src = 'imagens/mulher-jovem.png'
+            } else if(idade <= 55){
+                img.src = 'imagens/mulher-adulta.png'
+            } else if(idade <= 150){
+                img.src = 'imagens/mulher-idosa.png'
+            } 
+        } 
 
        
     }

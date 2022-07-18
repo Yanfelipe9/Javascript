@@ -35,10 +35,10 @@ section{
 
 }
 
-section div{
-    padding: 10px 0px 10px 0px;
+section div #res{
+    margin-top: 10px;
+    padding: 5px ;
     
-
 } 
 
 
